@@ -52,6 +52,7 @@ spec:
         imagePullPolicy: {{ .Values.image.pullPolicy | quote }}
         command:
         - "/bin/bash"
+        - "-x"
         - "/tmp/hadoop-config/bootstrap.sh"
         - "-d"
         resources:
